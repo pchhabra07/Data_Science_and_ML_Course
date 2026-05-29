@@ -4,6 +4,31 @@
 
 ---
 
+## 💻 Repository Structure
+
+```
+├── 📓 Python_Lec1_CB_PythonBasics_Strings_Lists_Tuples_Dicts_Sets.ipynb
+├── 📓 Python_Lec2_CB_MatchCase_IfElse_WhileLoop.ipynb
+├── 📓 Python_Lec3_CB_Functions_Params_ArgsKwargs_Scope_LambdaFunction.ipynb
+├── 📓 Python_Lec4_CB_Recursion_Decorators.ipynb
+├── 📓 Python_Lec5_CB_Generators_OOPS_Inheritance.ipynb
+├── 📓 Python_Lec6_CB_Encapsulation_Polymorphism.ipynb
+├── 📓 Python_Lec7_CB_Abstraction.ipynb
+├── 📓 Python_Lec8_CB_Numpy_Pandas.ipynb
+├── 📓 Python_Lec9_ManualDataCleaning_Encoding_Mapping.ipynb
+├── 📓 Python_Lec10_CB_ExploratoryDataAnalysis_EDA.ipynb
+├── 📓 Python_Lec11_CB_Graphs_MatplotLib_MLTheory.ipynb
+├── 📓 Python_Lec12_CB_SKLearn_MLFlow_TrainTestSplit_Scaling_Seaborn.ipynb
+├── 📓 Python_Lec13_CB_ColumnTransformations_DataCleaning_using_SKLearn.ipynb
+├── 📓 Python_Lec14_CB_Part1_PCA_Manually.ipynb
+├── 📓 Python_Lec14_CB_Part2_PCA_SKLearn.ipynb
+├── 📁 assignments/
+│    └── 📓 CB_Assignment1.ipynb
+└── 📁 datasets/
+```
+
+---
+
 ## 📚 Lecture-by-Lecture Breakdown
 
 ---
@@ -300,10 +325,60 @@ Automating the entire data cleaning pipeline using Scikit-Learn transformers.
 
 ---
 
+### 📓 Lecture 14 — Principal Component Analysis (PCA)
+
+This lecture is divided into two parts covering both manual calculations and library implementations.
+
+#### 📊 Part 1: PCA Manually
+**File:** `Python_Lec14_CB_Part1_PCA_Manually.ipynb`
+
+Understanding PCA from scratch using linear algebra.
+
+| Topic | What's Covered |
+|---|---|
+| **Random Seed Initialization** | Setting `np.random.seed()` for reproducible data generation |
+| **Synthetic Multi-Dimensional Data** | Creating synthetic 3D datasets using multivariate normal distribution (`np.random.multivariate_normal`) with mean vectors and covariance matrices |
+| **Mean Vector & Standardization** | Computing means per feature and centering data |
+| **Covariance Matrix Computation** | Calculating the covariance matrix manually from feature matrices using `np.cov()` |
+| **Eigen Decomposition** | Finding eigenvalues and eigenvectors of the covariance matrix using `np.linalg.eig()` |
+| **Selecting Principal Components** | Sorting eigenvalues to identify top eigenvectors that explain the maximum variance |
+| **Projection Matrix Creation** | Creating a transformation matrix `W` by stacking the top selected eigenvectors |
+| **Mathematical Dot Product Projection** | Projecting the original high-dimensional dataset onto the lower dimensional subspace using matrix multiplication (`np.dot`) |
+| **3D Data Projection Visualization** | Visualizing 3D data and principal axes using Matplotlib's 3D plotting tools (`Arrow3D`, `FancyArrowPatch`, `proj3d`) |
+
+#### ⚙️ Part 2: PCA using Scikit-Learn
+**File:** `Python_Lec14_CB_Part2_PCA_SKLearn.ipynb`
+
+Streamlining dimensionality reduction using built-in Scikit-Learn estimators.
+
+| Topic | What's Covered |
+|---|---|
+| **StandardScaler Scaling** | Fitting and transforming data using `StandardScaler` to ensure zero mean and unit variance before running PCA |
+| **PCA Instantiation** | Initializing `PCA` class with desired output dimensions (`n_components`) |
+| **Fit & Transform Pipeline** | Fitting the PCA estimator on scaled data and transforming it into principal components |
+| **Explained Variance Ratio** | Analyzing `pca.explained_variance_ratio_` to determine the percentage of variance captured by each principal component |
+| **PCA Components Matrix** | Reviewing `pca.components_` (the eigenvectors representing the directions of maximum variance in the feature space) |
+| **Scatter Plot Visualization** | Plotting projected data along `PC1` and `PC2` coordinate axes to identify patterns and clusters |
+
+---
+
 ## 📝 Assignment
 
 ### `assignments/CB_Assignment1.ipynb`
 Practice assignment covering concepts from the Python Basics lectures. Includes hands-on coding problems to reinforce understanding of variables, data structures, control flow, and functions.
+
+---
+
+## 🛠️ Tools & Libraries Used
+
+| Library | Purpose |
+|---|---|
+| `Python` | Core programming language |
+| `NumPy` | Numerical arrays and mathematical operations |
+| `Pandas` | DataFrames, data loading, data manipulation |
+| `Matplotlib` | Data visualisation (histograms, line plots) |
+| `Seaborn` | Statistical data visualisation (countplot, scatterplot, barplot) |
+| `Scikit-Learn` | Train-test split, scaling, encoding, column transformations, PCA |
 
 ---
 
