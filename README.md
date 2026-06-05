@@ -22,6 +22,7 @@
 ├── 📓 Python_Lec13_CB_ColumnTransformations_DataCleaning_using_SKLearn.ipynb
 ├── 📓 Python_Lec14_CB_Part1_PCA_Manually.ipynb
 ├── 📓 Python_Lec14_CB_Part2_PCA_SKLearn.ipynb
+├── 📓 Python_Lec15_CB_LinearRegression_MultipleLinearRegression_Manual_SKLearn.ipynb
 ├── 📁 assignments/
 │    └── 📓 CB_Assignment1.ipynb
 └── 📁 datasets/
@@ -359,6 +360,38 @@ Streamlining dimensionality reduction using built-in Scikit-Learn estimators.
 | **Explained Variance Ratio** | Analyzing `pca.explained_variance_ratio_` to determine the percentage of variance captured by each principal component |
 | **PCA Components Matrix** | Reviewing `pca.components_` (the eigenvectors representing the directions of maximum variance in the feature space) |
 | **Scatter Plot Visualization** | Plotting projected data along `PC1` and `PC2` coordinate axes to identify patterns and clusters |
+
+---
+
+### 📓 Lecture 15 — Linear Regression & Multiple Linear Regression: Manual & SKLearn
+
+**File:** `Python_Lec15_CB_LinearRegression_MultipleLinearRegression_Manual_SKLearn.ipynb`
+
+Implementing and evaluating both Single and Multiple Linear Regression models manually and using Scikit-Learn.
+
+#### 📈 Single Linear Regression (Manual & SKLearn)
+
+| Topic | What's Covered |
+|---|---|
+| **Manual Implementation** | Custom `LINEARREGRESSION` class with vectorized slope (`m`) and intercept (`b`) mathematical derivations |
+| **SKLearn Implementation** | Training a model with `LinearRegression` from `sklearn.linear_model` on `placement.csv` dataset |
+| **Coefficients & Intercepts** | Exposing `coef_` and `intercept_` to predict output package using the $y = mx + b$ equation |
+
+#### 📏 Evaluation Metrics
+
+| Topic | What's Covered |
+|---|---|
+| **Mean Absolute Error (MAE)** | Measures average magnitude of errors using `mean_absolute_error` |
+| **Mean Squared Error (MSE)** | Computes the average squared differences using `mean_squared_error` |
+| **Root Mean Squared Error (RMSE)** | Calculated as the square root of MSE (`np.sqrt(mse)`) |
+| **R2 Score** | Computes the coefficient of determination (`r2_score`) to measure variance explained by the model |
+
+#### 🧮 Multiple Linear Regression (Manual)
+
+| Topic | What's Covered |
+|---|---|
+| **OLS Matrix Formulation** | Solving coefficients using Ordinary Least Squares closed-form equation: $\beta = (X^T X)^{-1} X^T y$ |
+| **Custom Implementation** | Adding intercept columns of ones (`np.insert`), matrix inversion (`np.linalg.inv`), and dot product operations |
 
 ---
 
