@@ -25,7 +25,8 @@
 ├── 📓 Python_Lec15_CB_LinearRegression_MultipleLinearRegression_Manual_SKLearn.ipynb
 ├── 📓 Python_Lec16_CB_GradientDescent.ipynb
 ├── 📁 assignments/
-│    └── 📓 CB_Assignment1.ipynb
+│    ├── 📓 CB_Assignment1.ipynb
+│    └── 📓 CB_Assignment_2_Seaborn_EDA.ipynb
 └── 📁 datasets/
 ```
 
@@ -439,6 +440,9 @@ Implementing and visualizing Batch, Stochastic, and Mini-Batch Gradient Descent 
 
 ### `assignments/CB_Assignment1.ipynb`
 Practice assignment covering concepts from the Python Basics lectures. Includes hands-on coding problems to reinforce understanding of variables, data structures, control flow, and functions.
+
+### `assignments/CB_Assignment_2_Seaborn_EDA.ipynb`
+Practice assignment covering Exploratory Data Analysis (EDA) and data visualization using Seaborn on the Titanic dataset. Includes univariate and multivariate analysis (Numerical vs. Numerical, Numerical vs. Categorical, and Categorical vs. Categorical) to draw 10 key insights.
 
 ---
 
