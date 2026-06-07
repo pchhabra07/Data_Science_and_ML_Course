@@ -23,6 +23,7 @@
 ├── 📓 Python_Lec14_CB_Part1_PCA_Manually.ipynb
 ├── 📓 Python_Lec14_CB_Part2_PCA_SKLearn.ipynb
 ├── 📓 Python_Lec15_CB_LinearRegression_MultipleLinearRegression_Manual_SKLearn.ipynb
+├── 📓 Python_Lec16_CB_GradientDescent.ipynb
 ├── 📁 assignments/
 │    └── 📓 CB_Assignment1.ipynb
 └── 📁 datasets/
@@ -392,6 +393,45 @@ Implementing and evaluating both Single and Multiple Linear Regression models ma
 |---|---|
 | **OLS Matrix Formulation** | Solving coefficients using Ordinary Least Squares closed-form equation: $\beta = (X^T X)^{-1} X^T y$ |
 | **Custom Implementation** | Adding intercept columns of ones (`np.insert`), matrix inversion (`np.linalg.inv`), and dot product operations |
+
+---
+
+### 📓 Lecture 16 — Gradient Descent
+
+**File:** `Python_Lec16_CB_GradientDescent.ipynb`
+
+Implementing and visualizing Batch, Stochastic, and Mini-Batch Gradient Descent from scratch.
+
+#### 📉 Batch Gradient Descent (BGD)
+
+| Topic | What's Covered |
+|---|---|
+| **Parameter Initialization** | Initializing slope (`m`) and intercept (`b`), setting learning rate and epochs |
+| **BGD Implementation** | Computing predictions and cost (MSE) across the entire dataset, calculating gradients, and updating parameters in each iteration |
+| **Regression Visualization** | Plotting the data points and final regression line after BGD convergence |
+
+#### ⚡ Stochastic Gradient Descent (SGD)
+
+| Topic | What's Covered |
+|---|---|
+| **Row-by-Row Updates** | Iterating through individual data points within each epoch to perform parameter updates |
+| **SGD Implementation** | Calculating gradients and updating parameters on a single observation level, improving learning speed on larger datasets |
+| **Progress Visualization** | Tracking and plotting the regression line updates epoch-by-epoch (Epoch 1 to 5) to show optimization path |
+
+#### 🧩 Mini-Batch Gradient Descent
+
+| Topic | What's Covered |
+|---|---|
+| **Batching Mechanism** | Splitting the dataset into small batches (e.g., `batch_size = 2`) to balance speed and stability |
+| **Mini-Batch Implementation** | Computing gradients and updating parameters on a per-batch basis |
+| **Progress Visualization** | Plotting regression line updates per epoch to visualize Mini-Batch GD convergence |
+
+#### 📊 Comparison & Analysis
+
+| Topic | What's Covered |
+|---|---|
+| **Comparative Plotting** | Generating side-by-side subplots comparing Batch GD, Stochastic GD, and Mini-Batch GD |
+| **Convergence Patterns** | Comparing the path and stability of learning lines across the three different gradient descent optimization techniques |
 
 ---
 
