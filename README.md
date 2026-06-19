@@ -25,6 +25,7 @@
 ├── 📓 Python_Lec15_CB_LinearRegression_MultipleLinearRegression_Manual_SKLearn.ipynb
 ├── 📓 Python_Lec16_CB_GradientDescent.ipynb
 ├── 📓 Python_Lec17_CB_Perceptron_Trick.ipynb
+├── 📓 Python_Lec18_CB_ClassificationMetrics_KNN.ipynb
 ├── 📁 assignments/
 │    ├── 📓 CB_Assignment1.ipynb
 │    └── 📓 CB_Assignment_2_Seaborn_EDA.ipynb
@@ -449,6 +450,21 @@ Implementing classification boundary lines and optimization tricks using the Per
 | **Sigmoid Activation Function** | Squashing linear combinations into probabilities: $\sigma(z) = \frac{1}{1 + e^{-z}}$ |
 | **Soft Boundaries & Gradient Descent** | Computing probability-based predictions, calculating prediction error (`true - pred`), and updating weights/bias for both classified and misclassified points |
 | **Custom Perceptron Implementation** | Building a perceptron trainer from scratch using bias column insertion (`np.insert`), dot product projection, random row indexing, and stochastic updates over 1000 iterations |
+
+---
+
+### 📓 Lecture 18 — Classification Metrics & KNN
+
+**File:** `Python_Lec18_CB_ClassificationMetrics_KNN.ipynb`
+
+Implementing K-Nearest Neighbors classification and evaluating model performance using key classification metrics on the Breast Cancer dataset.
+
+| Topic | What's Covered |
+|---|---|
+| **Breast Cancer Dataset Loading** | Loading the diagnostic dataset using Scikit-Learn's `load_breast_cancer()` and converting it into a Pandas DataFrame |
+| **KNN Classification** | Training a K-Nearest Neighbors model using `KNeighborsClassifier` from `sklearn.neighbors` and standardizing features with `StandardScaler` |
+| **Classification Metrics** | Measuring performance using Accuracy (`accuracy_score`), Confusion Matrix (`confusion_matrix`, `ConfusionMatrixDisplay`), and Classification Report (`classification_report`) containing Precision, Recall, and F1-score |
+| **K-Value Optimization** | Finding the optimal `k` parameter by plotting K Value vs. Accuracy over a range of neighbor counts (1 to 20) |
 
 ---
 
