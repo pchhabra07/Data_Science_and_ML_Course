@@ -24,6 +24,7 @@
 ├── 📓 Python_Lec14_CB_Part2_PCA_SKLearn.ipynb
 ├── 📓 Python_Lec15_CB_LinearRegression_MultipleLinearRegression_Manual_SKLearn.ipynb
 ├── 📓 Python_Lec16_CB_GradientDescent.ipynb
+├── 📓 Python_Lec17_CB_Perceptron_Trick.ipynb
 ├── 📁 assignments/
 │    ├── 📓 CB_Assignment1.ipynb
 │    └── 📓 CB_Assignment_2_Seaborn_EDA.ipynb
@@ -433,6 +434,21 @@ Implementing and visualizing Batch, Stochastic, and Mini-Batch Gradient Descent 
 |---|---|
 | **Comparative Plotting** | Generating side-by-side subplots comparing Batch GD, Stochastic GD, and Mini-Batch GD |
 | **Convergence Patterns** | Comparing the path and stability of learning lines across the three different gradient descent optimization techniques |
+
+---
+
+### 📓 Lecture 17 — Perceptron Trick
+
+**File:** `Python_Lec17_CB_Perceptron_Trick.ipynb`
+
+Implementing classification boundary lines and optimization tricks using the Perceptron algorithm and Sigmoid activation.
+
+| Topic | What's Covered |
+|---|---|
+| **Perceptron Trick (Hard Boundaries)** | Iterating over points, making hard predictions (0 or 1), and updating weights/bias only on misclassified instances (`w = w ± lr * x`, `b = b ± lr`) |
+| **Sigmoid Activation Function** | Squashing linear combinations into probabilities: $\sigma(z) = \frac{1}{1 + e^{-z}}$ |
+| **Soft Boundaries & Gradient Descent** | Computing probability-based predictions, calculating prediction error (`true - pred`), and updating weights/bias for both classified and misclassified points |
+| **Custom Perceptron Implementation** | Building a perceptron trainer from scratch using bias column insertion (`np.insert`), dot product projection, random row indexing, and stochastic updates over 1000 iterations |
 
 ---
 
