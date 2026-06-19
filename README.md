@@ -26,6 +26,7 @@
 ├── 📓 Python_Lec16_CB_GradientDescent.ipynb
 ├── 📓 Python_Lec17_CB_Perceptron_Trick.ipynb
 ├── 📓 Python_Lec18_CB_ClassificationMetrics_KNN.ipynb
+├── 📓 Python_Lec19_CB_KMeans.ipynb
 ├── 📁 assignments/
 │    ├── 📓 CB_Assignment1.ipynb
 │    └── 📓 CB_Assignment_2_Seaborn_EDA.ipynb
@@ -465,6 +466,21 @@ Implementing K-Nearest Neighbors classification and evaluating model performance
 | **KNN Classification** | Training a K-Nearest Neighbors model using `KNeighborsClassifier` from `sklearn.neighbors` and standardizing features with `StandardScaler` |
 | **Classification Metrics** | Measuring performance using Accuracy (`accuracy_score`), Confusion Matrix (`confusion_matrix`, `ConfusionMatrixDisplay`), and Classification Report (`classification_report`) containing Precision, Recall, and F1-score |
 | **K-Value Optimization** | Finding the optimal `k` parameter by plotting K Value vs. Accuracy over a range of neighbor counts (1 to 20) |
+
+---
+
+### 📓 Lecture 19 — K-Means Clustering
+
+**File:** `Python_Lec19_CB_KMeans.ipynb`
+
+Implementing K-Means Clustering to group unlabeled data points into distinct clusters.
+
+| Topic | What's Covered |
+|---|---|
+| **Synthetic Dataset Generation** | Generating isotropic Gaussian blobs using Scikit-Learn's `make_blobs` for unsupervised clustering experiments |
+| **Elbow Method & WCSS** | Calculating the Within-Cluster Sum of Squares (WCSS) or inertia over a range of cluster sizes ($K \in [1, 10]$) and plotting it to identify the optimal number of clusters |
+| **K-Means Clustering** | Training a `KMeans` model on the dataset, making cluster predictions for each data point, and locating cluster centroids |
+| **Cluster Visualization** | Creating scatter plots of clustered data points color-coded by their respective labels, alongside their centroids |
 
 ---
 
