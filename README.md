@@ -27,6 +27,7 @@
 ├── 📓 Python_Lec17_CB_Perceptron_Trick.ipynb
 ├── 📓 Python_Lec18_CB_ClassificationMetrics_KNN.ipynb
 ├── 📓 Python_Lec19_CB_KMeans.ipynb
+├── 📓 Python_Lec20_CB_SVM.ipynb
 ├── 📁 assignments/
 │    ├── 📓 CB_Assignment1.ipynb
 │    └── 📓 CB_Assignment_2_Seaborn_EDA.ipynb
@@ -481,6 +482,22 @@ Implementing K-Means Clustering to group unlabeled data points into distinct clu
 | **Elbow Method & WCSS** | Calculating the Within-Cluster Sum of Squares (WCSS) or inertia over a range of cluster sizes ($K \in [1, 10]$) and plotting it to identify the optimal number of clusters |
 | **K-Means Clustering** | Training a `KMeans` model on the dataset, making cluster predictions for each data point, and locating cluster centroids |
 | **Cluster Visualization** | Creating scatter plots of clustered data points color-coded by their respective labels, alongside their centroids |
+
+---
+
+### 📓 Lecture 20 — Support Vector Machines (SVM)
+
+**File:** `Python_Lec20_CB_SVM.ipynb`
+
+Implementing Support Vector Machine classification and visualizing decision boundaries on the Breast Cancer dataset.
+
+| Topic | What's Covered |
+|---|---|
+| **Breast Cancer Dataset Loading** | Loading the diagnostic breast cancer dataset using Scikit-Learn's `load_breast_cancer()` and separating features and labels |
+| **Dimensionality Reduction (PCA)** | Transforming high-dimensional breast cancer features into 2D using Principal Component Analysis (`PCA`) for plotting/visualization |
+| **SVM Classification** | Creating and training a Support Vector Classifier (`SVC`) with a `linear` kernel |
+| **Model Evaluation** | Evaluating model performance by computing the classification accuracy (`accuracy_score`) on the test set |
+| **Decision Boundary Visualization** | Defining a custom function to plot the classifier's decision boundary using a meshgrid, `decision_function`, and contours (`plt.contour`) |
 
 ---
 
