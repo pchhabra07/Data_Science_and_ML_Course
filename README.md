@@ -28,6 +28,7 @@
 ├── 📓 Python_Lec18_CB_ClassificationMetrics_KNN.ipynb
 ├── 📓 Python_Lec19_CB_KMeans.ipynb
 ├── 📓 Python_Lec20_CB_SVM.ipynb
+├── 📓 Python_Lec21_CB_Naive_Bayes.ipynb
 ├── 📁 assignments/
 │    ├── 📓 CB_Assignment1.ipynb
 │    └── 📓 CB_Assignment_2_Seaborn_EDA.ipynb
@@ -498,6 +499,22 @@ Implementing Support Vector Machine classification and visualizing decision boun
 | **SVM Classification** | Creating and training a Support Vector Classifier (`SVC`) with a `linear` kernel |
 | **Model Evaluation** | Evaluating model performance by computing the classification accuracy (`accuracy_score`) on the test set |
 | **Decision Boundary Visualization** | Defining a custom function to plot the classifier's decision boundary using a meshgrid, `decision_function`, and contours (`plt.contour`) |
+
+---
+
+### 📓 Lecture 21 — Naive Bayes Classifier
+
+**File:** `Python_Lec21_CB_Naive_Bayes.ipynb`
+
+Implementing Naive Bayes classification both manually and using Scikit-Learn on the Play Tennis dataset.
+
+| Topic | What's Covered |
+|---|---|
+| **Play Tennis Dataset Loading** | Loading the classic "PlayTennis.csv" dataset using Pandas to understand attribute characteristics |
+| **Manual Probability Derivations** | Calculating prior probabilities ($P(yes)$, $P(no)$) and conditional probabilities ($P(attribute \mid class)$) manually from the dataset |
+| **Naive Bayes Classification (Manual)** | Computing final joint probabilities for test scenarios to predict whether to play tennis or not |
+| **Feature Encoding** | Encoding categorical variables using `LabelEncoder` (explaining why one-hot encoding violates feature independence assumptions) |
+| **Categorical Naive Bayes** | Training and executing predictions using Scikit-Learn's `CategoricalNB` classifier, and mapping numeric outputs back to labels |
 
 ---
 
